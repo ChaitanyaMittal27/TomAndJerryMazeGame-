@@ -1,0 +1,119 @@
+tr, td, table{
+    border: "0";
+    padding: 0px;
+    margin: 0px;
+    border-spacing: 0px;
+    background-color: white;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+img.stack{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Maze Floor (Field) */
+img[src="res/field.png"] {
+    background-color: #f5f5dc; /* Light beige */
+    border: 1px solid #ccc; /* Subtle border for clarity */
+}
+
+/*
+    General Structure
+*/
+.sidebar {
+    width: 200px;
+    border: 0px solid black;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+}
+
+#contents {
+    margin-left: 210px;
+    margin-right: 210px;
+}
+
+/* Styling for the header container */
+#heading {
+    background-color: #1E90FF; /* Playful blue */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 5px solid red; /* Red accent */
+}
+
+/* Styling for the title */
+#title {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    text-shadow: 2px 2px 0px #000, 4px 4px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+body {
+    background-color: #fff4c2; /* Light yellow cheese-inspired */
+}
+
+/* Buttons */
+button {
+    background-color: #FF7F50; /* Coral */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FF6347; /* Darker coral */
+}
+
+/* Game Text */
+#description {
+    color: #333; /* Dark gray for readability */
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+#footer {
+    background-color: #1E90FF; /* Playful blue, consistent with the header */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 5px solid red; /* Red accent to match the header */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer text and link styles */
+#footer p {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#footer a {
+    color: #FFD700; /* Gold for emphasis */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer a:hover {
+    text-decoration: underline; /* Subtle hover effect */
+}
