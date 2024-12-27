@@ -22,18 +22,16 @@
             <button type="button" v-on:click="newGame()">
                 New Game
             </button>
-
-            <span v-if="game != null">
-                <button type="button" v-on:click="cheat1Cheese()">
-                    Cheat: 1 Cheese
+            <div id="cheat-menu" v-if="game != null">
+                <button id="toggle-cheats" v-on:click="toggleCheats">
+                    {{ cheatsVisible ? 'Hide Cheats' : 'Show Cheats' }}
                 </button>
-                <button type="button" v-on:click="cheatShowAll()">
-                    Cheat: Show All
-                </button>
-                <button type="button" v-on:click="catMove()">
-                    Force Cat Move
-                </button>
-            </span>
+                <div id="cheats" v-show="cheatsVisible">
+                    <button type="button" v-on:click="cheat1Cheese()">Cheat: 1 Cheese</button>
+                    <button type="button" v-on:click="cheatShowAll()">Cheat: Show All</button>
+                    <button type="button" v-on:click="catMove()">Force Cat Move</button>
+                 </div>
+            </div>
         </p>
 
         <!-- Game state -->

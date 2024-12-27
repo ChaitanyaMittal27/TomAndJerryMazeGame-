@@ -63,6 +63,9 @@ img[src="res/field.png"] {
 
 body {
     background-color: #fff4c2; /* Light yellow cheese-inspired */
+    margin: 0;
+    padding-bottom: 60px; /* Matches the footer height */
+    box-sizing: border-box;
 }
 
 /* Buttons */
@@ -145,4 +148,44 @@ button:hover {
 #cheese-goal {
     color: #1E90FF; /* Playful blue */
     font-weight: bold;
+}
+
+/* Cheat menu */
+#cheat-menu {
+    margin: 10px 0;
+}
+
+#toggle-cheats {
+    background-color: #FF7F50; /* Coral */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#toggle-cheats:hover {
+    background-color: #FF6347; /* Darker coral */
+}
+
+#cheats {
+    margin-top: 10px;
+}
+
+#cheats button {
+    background-color: #FFD700; /* Gold */
+    color: #333;
+    border: 1px solid #FF7F50; /* Coral border */
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+#cheats button:hover {
+    background-color: #FFC107; /* Darker gold */
 }

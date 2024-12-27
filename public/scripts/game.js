@@ -8,6 +8,7 @@ const myAppObj = new Vue({
         playersTurn: true,
         game: null,
         board: null,
+        cheatsVisible: false
     },
 
     methods: {
@@ -19,6 +20,10 @@ const myAppObj = new Vue({
         locationMatches: function(loc, x, y) {
             return loc.x == x && loc.y == y;
         },
+
+        toggleCheats: function () {
+                this.cheatsVisible = !this.cheatsVisible;
+            }
     }
 });
 
