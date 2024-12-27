@@ -117,3 +117,32 @@ button:hover {
 #footer a:hover {
     text-decoration: underline; /* Subtle hover effect */
 }
+
+/* Game status container */
+#game-status {
+    background-color: #f5f5dc; /* Light beige to match the maze */
+    border: 2px solid #FF7F50; /* Coral border */
+    border-radius: 8px;
+    padding: 10px;
+    margin: 15px auto;
+    width: fit-content;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#game-status p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#cheese-count {
+    color: #FF7F50; /* Coral */
+    font-weight: bold;
+}
+
+#cheese-goal {
+    color: #1E90FF; /* Playful blue */
+    font-weight: bold;
+}

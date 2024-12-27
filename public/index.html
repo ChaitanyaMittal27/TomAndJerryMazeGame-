@@ -37,11 +37,13 @@
         </p>
 
         <!-- Game state -->
-        <p v-if="game != null">
-            You have found {{game.numCheeseFound}} of {{game.numCheeseGoal}}!</p>
+        <div id="game-status" v-if="game != null">
+            <p><strong>Status:</strong> You have found <span id="cheese-count">{{game.numCheeseFound}}</span> of <span id="cheese-goal">{{game.numCheeseGoal}}</span> cheese pieces!</p>
+        </div>
         <p v-else>
             No game information available; try creating a new game?
         </p>
+
 
 
         <!-- Board -->
