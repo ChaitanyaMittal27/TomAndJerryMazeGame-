@@ -58,3 +58,13 @@ This project is a web-based maze game where the player controls Jerry to collect
   
   1. Inspired by a university assignment.
   2. Images sourced from google
+
+## Future Enhancements
+- **Timer and High Score Tracking**: timer and DOM storage to maintain record times and alert when new record.
+- **Leaderboard**: Track multiple high scores and store them locally or in a backend.
+- **Enhanced Animations**: Add animations for game events (e.g., cheese collected, win/loss).
+- **Sound Effects**: Play unique sounds for key events like collecting cheese or losing.
+- **Responsive Design**: Improve layout for mobile and smaller screens.
+
+## Update:
+With recent changes [deployment at gh pages](https://chaitanyamittal27.github.io/TomAndJerryMazeGame-/) failed. Please clone the main and run the Application.java (src/java/ca/mazegame/Application.java)
