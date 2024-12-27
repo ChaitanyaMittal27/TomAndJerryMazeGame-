@@ -73,10 +73,18 @@
                 </tr>
             </table>
 
-            <!-- Won / loss -->
-            <h1 v-if="game.isGameWon">YOU WON! Congratulations!</h1>
-            <h1 v-if="game.isGameLost">YOU LOST! Try again?</h1>
-
+            <!-- Win/Loss Modal -->
+            <div id="result-modal" v-if="game != null && (game.isGameWon || game.isGameLost)">
+                <div id="modal-content">
+                    <h2 v-if="game.isGameWon">🎉 YOU WON! 🎉</h2>
+                    <h2 v-else>😢 YOU LOST! 😢</h2>
+                    <p v-if="game.isGameWon">Congratulations on helping Jerry collect all the cheese!</p>
+                    <p v-else>Better luck next time! Avoid Tom to help Jerry succeed.</p>
+                    <div id="modal-buttons">
+                        <button type="button" v-on:click="newGame()">Play Again</button>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>

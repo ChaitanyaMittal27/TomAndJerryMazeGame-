@@ -189,3 +189,62 @@ button:hover {
 #cheats button:hover {
     background-color: #FFC107; /* Darker gold */
 }
+/* Modal overlay */
+#result-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal content box */
+#modal-content {
+    background-color: #fff; /* White background for content */
+    color: #333; /* Dark text for readability */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Modal heading */
+#modal-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #FF7F50; /* Coral for win */
+}
+
+#modal-content h2 + p {
+    font-size: 1rem;
+    color: #555; /* Subtle gray for supporting text */
+}
+
+/* Buttons inside modal */
+#modal-buttons {
+    margin-top: 15px;
+}
+
+#modal-buttons button {
+    background-color: #FF7F50; /* Coral */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#modal-buttons button:hover {
+    background-color: #FF6347; /* Darker coral */
+}

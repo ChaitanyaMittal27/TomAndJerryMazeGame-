@@ -17,13 +17,19 @@ const myAppObj = new Vue({
         cheatShowAll: sendShowAll,
         catMove: sendMoveCats,
 
+        restartGame: function () {
+                loadGame(); // Reloads the current game
+                loadGameBoard();
+        },
+
         locationMatches: function(loc, x, y) {
             return loc.x == x && loc.y == y;
         },
 
         toggleCheats: function () {
                 this.cheatsVisible = !this.cheatsVisible;
-            }
+        }
+
     }
 });
 
